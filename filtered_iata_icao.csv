@@ -1,4 +1,5 @@
 country_code,region_name,iata,icao,airport,latitude,longitude
+AS,Eastern District,PPG,NSTU,Pago Pago International Airport,-14.331,-170.71
 GU,Barrigada,GUM,PGUM,Antonio B. Won Pat International Airport (Guam Int'l),13.4834,144.796
 MP,Northern Mariana Islands,SPN,PGSN,Saipan International Airport (Francisco C. Ada Int'l),15.119,145.729
 MP,Northern Mariana Islands,TIQ,PGWT,Tinian International Airport (West Tinian Airport),14.9992,145.619

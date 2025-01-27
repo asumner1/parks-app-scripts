@@ -8,11 +8,13 @@ Flagstaff,FLG,P-N,115596,US,Arizona,Flagstaff Pulliam Airport,35.1385,-111.671
 Mesa,AZA,P-S,795407,US,Arizona,Phoenix-Mesa Gateway Airport,33.3078,-111.655
 Phoenix,PHX,P-L,18940287,US,Arizona,Phoenix Sky Harbor International Airport,33.4343,-112.012
 Tucson,TUS,P-S,1323536,US,Arizona,Tucson International Airport,32.1161,-110.941
+Yuma,YUM,P-N,110182,US,Arizona,Yuma International Airport / MCAS Yuma,32.6566,-114.606
 Fayetteville,XNA,P-S,598787,US,Arkansas,Northwest Arkansas Regional Airport,36.2819,-94.3068
 Little Rock,LIT,P-S,827922,US,Arkansas,Clinton National Airport (Adams Field),34.7294,-92.2243
 Arcata/Eureka,ACV,P-N,117972,US,California,Arcata-Eureka Airport,40.9781,-124.109
 Burbank,BUR,P-M,3132019,US,California,Bob Hope Airport,34.2007,-118.359
 Fresno,FAT,P-S,1201789,US,California,Fresno Yosemite International Airport,36.7762,-119.718
+Long Beach,LGB,P-S,1837622,US,California,Long Beach Airport,33.8177,-118.152
 Los Angeles,LAX,P-L,36676975,US,California,Los Angeles International Airport,33.9425,-118.408
 Monterey,MRY,P-N,259762,US,California,Monterey Regional Airport,36.587,-121.843
 Ontario,ONT,P-M,3181161,US,California,Ontario International Airport,34.056,-117.601
@@ -47,10 +49,14 @@ Lexington,LEX,P-S,657018,US,Kentucky,Blue Grass Airport,38.0365,-84.6059
 Louisville,SDF,P-S,1877861,US,Kentucky,Louisville International Airport (Standiford Field),38.1744,-85.736
 Bangor,BGR,P-N,336140,US,Maine,Bangor International Airport,44.8074,-68.8281
 Portland,PWM,P-S,1062873,US,Maine,Portland International Jetport,43.6462,-70.3093
+Presque Isle,PQI,P-N,10865,US,Maine,Presque Isle International Airport,46.689,-68.0448
+Baltimore,BWI,P-L,11151169,US,Maryland,Baltimore/Washington International Airport,39.1753,-76.6683
 Hancock,CMX,P-N,24041,US,Michigan,Houghton County Memorial Airport,47.1684,-88.4891
+Kalamazoo,AZO,P-N,152845,US,Michigan,Kalamazoo/Battle Creek International Airport,42.2349,-85.5521
 Sault Ste. Marie,CIU,P-N,23324,US,Michigan,Chippewa County International Airport,46.2508,-84.4724
 Duluth,DLH,P-N,136806,US,Minnesota,Duluth International Airport,46.8421,-92.1936
 St. Louis,STL,P-M,7631953,US,Missouri,Lambert-St. Louis International Airport,38.7487,-90.37
+Springfield/Branson,SGF,P-S,523108,US,Missouri,Springfield-Branson National Airport,37.2457,-93.3886
 Billings,BIL,P-S,440263,US,Montana,Billings Logan International Airport,45.8077,-108.543
 Bozeman,BZN,P-S,670295,US,Montana,Bozeman Yellowstone International Airport (Gallatin Field),45.7775,-111.153
 Great Falls,GTF,P-N,176434,US,Montana,Great Falls International Airport,47.482,-111.371
@@ -70,6 +76,7 @@ Grand Forks,GFK,P-N,69800,US,North Dakota,Grand Forks International Airport,47.9
 Minot,MOT,P-N,126575,US,North Dakota,Minot International Airport,48.2594,-101.28
 Williston,XWA,P-N,46577,US,North Dakota,Williston Basin International Airport,48.2597,-103.751
 Cleveland,CLE,P-M,4701713,US,Ohio,Cleveland Hopkins International Airport,41.4117,-81.8498
+Columbus,CMH,P-M,3976620,US,Ohio,John Glenn Columbus International Airport,39.998,-82.8919
 Columbus,LCK,P-N,154475,US,Ohio,Rickenbacker International Airport,39.8138,-82.9278
 Eugene,EUG,P-S,566832,US,Oregon,Eugene Airport (Mahlon Sweet Airport),44.1246,-123.212
 Medford,MFR,P-S,492217,US,Oregon,Rogue Valley International-Medford Airport,42.3742,-122.873
@@ -80,12 +87,16 @@ Pittsburgh,PIT,P-M,4670033,US,Pennsylvania,Pittsburgh International Airport,40.4
 Charleston,CHS,P-M,2192893,US,South Carolina,Charleston International Airport / Charleston Air Force Base,32.8986,-80.0405
 Columbia,CAE,P-S,566660,US,South Carolina,Columbia Metropolitan Airport,33.9388,-81.1195
 Greenville,GSP,P-S,1133012,US,South Carolina,Greenville-Spartanburg International Airport,34.8957,-82.2189
+Myrtle Beach,MYR,P-S,1254307,US,South Carolina,Myrtle Beach International Airport,33.6797,-78.9283
 Rapid City,RAP,P-S,303471,US,South Dakota,Rapid City Regional Airport,44.0453,-103.057
+Sioux Falls,FSD,P-S,529895,US,South Dakota,Sioux Falls Regional Airport (Joe Foss Field),43.582,-96.7419
+Chattanooga,CHA,P-S,504833,US,Tennessee,Chattanooga Metropolitan Airport (Lovell Field),35.0353,-85.2038
 Knoxville,TYS,P-S,1069565,US,Tennessee,McGhee Tyson Airport,35.811,-83.994
 Memphis,MEM,P-M,2213083,US,Tennessee,Memphis International Airport,35.0424,-89.9767
 Nashville,BNA,P-L,8017347,US,Tennessee,Nashville International Airport,36.1245,-86.6782
 Del Rio,DRT,P-N,19879,US,Texas,Del Rio International Airport,29.3742,-100.927
 El Paso,ELP,P-S,1438321,US,Texas,El Paso International Airport,31.8072,-106.378
+Laredo,LRD,P-N,108992,US,Texas,Laredo International Airport,27.5438,-99.4616
 Lubbock,LBB,P-S,405157,US,Texas,Lubbock Preston Smith International Airport,33.6636,-101.823
 Midland / Odessa,MAF,P-S,504264,US,Texas,Midland International Air and Space Port,31.9425,-102.202
 Cedar City,CDC,P-N,12807,US,Utah,Cedar City Regional Airport,37.701,-113.099
@@ -95,10 +106,14 @@ Richmond,RIC,P-S,2048691,US,Virginia,Richmond International Airport,37.5052,-77.
 "Washington, D.C. / Arlington",DCA,P-L,11366771,US,Virginia,Ronald Reagan Washington National Airport,38.8522,-77.0378
 "Washington, D.C. / Dulles / Chantilly",IAD,P-L,11621623,US,Virginia,Washington Dulles International Airport,38.9445,-77.4558
 Bellingham,BLI,P-N,368186,US,Washington,Bellingham International Airport,48.7928,-122.538
+Pasco,PSC,P-S,395348,US,Washington,Tri-Cities Airport,46.2647,-119.119
 Seattle,BFI,P-N,18586,US,Washington,Boeing Field/King County International Airport,47.53,-122.302
 Seattle / Tacoma (SeaTac),SEA,P-L,24024908,US,Washington,Seattle-Tacoma International Airport,47.449,-122.309
+Spokane,GEG,P-S,1872781,US,Washington,Spokane International Airport,47.6199,-117.534
 Charleston,CRW,P-N,164240,US,West Virginia,Yeager Airport,38.3731,-81.5932
+Green Bay,GRB,P-N,330478,US,Wisconsin,Austin Straubel International Airport,44.4851,-88.1296
 Casper,CPR,P-N,66629,US,Wyoming,Casper-Natrona County International Airport,42.908,-106.464
 Jackson,JAC,P-S,497548,US,Wyoming,Jackson Hole Airport,43.6073,-110.738
 San Juan / Carolina,SJU,P-M,4033412,PR,Carolina,Luis Munoz Marin International Airport,18.4394,-66.0018
 "Charlotte Amalie, St. Thomas",STT,P-S,417871,VI,"Virgin Islands, U.S.",Cyril E. King Airport,18.3373,-64.9734
+"Pago Pago, Tutuila",PPG,CS,8000,AS,Eastern District,Pago Pago International Airport,-14.331,-170.71

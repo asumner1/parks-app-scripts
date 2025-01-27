@@ -6,6 +6,10 @@ airports_df = pd.read_csv('airports_1.csv')
 iata_icao_df = pd.read_csv('iata-icao.csv')
 gpt_suggested_df = pd.read_csv('GPT_Suggested_National_Parks_Airports.csv')
 
+print("After initial load:")
+print("HNL in airports_df IATA:", 'HNL' in airports_df['IATA'].values)
+print("HNL in iata_icao_df iata:", 'HNL' in iata_icao_df['iata'].values)
+
 # Read national parks data and get coordinates
 parks_df = pd.read_csv('national_parks.csv')
 park_coordinates = parks_df[['Latitude', 'Longitude']].values
@@ -23,6 +27,11 @@ airports_filtered = airports_df[
     (airports_df['Airport'].str.contains('International', case=False, na=False))
 ]
 
+
+
+print("\nAfter airports_filtered:")
+print("HNL in airports_filtered IATA:", 'HNL' in airports_filtered['IATA'].values)
+
 # Get list of IATA codes from filtered airports
 valid_iata_codes = airports_filtered['IATA'].dropna().unique()
 
@@ -31,6 +40,9 @@ iata_icao_filtered = iata_icao_df[
     iata_icao_df['iata'].isin(valid_iata_codes)
 ]
 
+print("\nAfter iata_icao_filtered:")
+print("HNL in iata_icao_filtered iata:", 'HNL' in iata_icao_filtered['iata'].values)
+
 # Merge the filtered dataframes
 merged_airports = airports_filtered.merge(
     iata_icao_filtered,
@@ -38,6 +50,9 @@ merged_airports = airports_filtered.merge(
     right_on='iata',
     how='left'
 )
+
+print("\nAfter merge:")
+print("HNL in merged_airports iata:", 'HNL' in merged_airports['iata'].values)
 
 # For rows where 'Airport' contains 'International' but 'airport' doesn't,
 # set 'airport' equal to 'Airport'
@@ -81,6 +96,9 @@ for idx, airport in non_suggested_airports.iterrows():
 # Filter out airports that are too far from any park
 merged_airports = merged_airports[~merged_airports['iata'].isin(iatas_to_exclude)]
 
+print("\nAfter distance filtering:")
+print("HNL in merged_airports iata:", 'HNL' in merged_airports['iata'].values)
+
 # Create set to store closest airport codes
 closest_airports = set()
 
@@ -97,7 +115,7 @@ for park_point in park_coordinates:
     
     # Sort by distance and get 3 closest
     distances.sort()
-    closest_three = distances[:3]
+    closest_three = distances[:4]
     
     # Add IATA codes to set
     for _, iata in closest_three:
@@ -109,6 +127,11 @@ merged_airports = merged_airports[
     merged_airports['iata'].isin(closest_airports) |
     merged_airports['iata'].isin(suggested_codes)
 ]
+
+print("\nAfter closest airports filtering:")
+if 'HNL' in closest_airports:
+    print("HNL is in closest_airports set")
+print("HNL in final merged_airports iata:", 'HNL' in merged_airports['iata'].values)
 
 # Save merged dataframe to CSV
 merged_airports.to_csv('filtered_airports.csv', index=False)
