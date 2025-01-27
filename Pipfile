@@ -8,6 +8,10 @@ openai = "*"
 python-dotenv = "*"
 tiktoken = "*"
 pandas = "*"
+requests = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+geopy = "*"
 
 [dev-packages]
 
